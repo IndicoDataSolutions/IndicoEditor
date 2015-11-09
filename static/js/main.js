@@ -1,3 +1,7 @@
+//setup before functions
+var typingTimer; 
+var doneTypingInterval = 500; 
+
 $(function() {
 
     var baseColors = {
@@ -53,6 +57,7 @@ $(function() {
       return value !== "";
     }
 
+
     var updateHighlighted = function() {
         var text = $('#editor').text()
         var sentences = splitSentences(text).filter(notEmpty);
@@ -65,9 +70,12 @@ $(function() {
         })
     }
 
-    $('.submit-btn').click(function() {
-        updateHighlighted();
-    })
+    $('#editor').keyup(function(){
+        clearTimeout(typingTimer);
+        if ($('#editor').val) {
+            typingTimer = setTimeout(updateHighlighted, doneTypingInterval);
+        }
+    });
 
     $('.highlight').click(function() {
         updateHighlighted();
