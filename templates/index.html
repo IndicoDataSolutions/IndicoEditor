@@ -1,0 +1,64 @@
+<html class="grey lighten-3">
+  <head>
+  <!-- Icon Font -->
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+  <link rel="stylesheet" href="{{ static_url("css/main.css") }}">
+
+  <!-- Compiled and minified JavaScript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script> 
+  <script type="text/javascript" src="{{ static_url("js/main.js") }}"></script> 
+  </head>
+  <title>
+  Analyze Your Writing With Indico 
+  </title>
+  <body>
+    <div class="row">
+      <div id='sidebar' class="teal white-text col s3">
+        <div class="row"></div>
+        <div class="row">
+          <button class='col btn teal-text blue grey-text text-lighten-3 s12 text-center highlight highlighted'>sentiment</button>
+        </div>
+        <div class="row">
+          <button class='col btn teal-text grey lighten-3 s12 text-center highlight'>business</button>
+        </div>
+        <div class="row">
+          <button class='col btn teal-text grey lighten-3 s12 text-center highlight'>lifestyle</button>
+        </div>
+        <div class="row">
+          <button class='col btn teal-text grey lighten-3 s12 text-center highlight'>science and technology</button>
+        </div>
+        <div class="row">
+          <button class='col btn teal-text grey lighten-3 s12 text-center highlight'>arts and culture</button>
+        </div>
+        <div class="row">
+          <button class='col btn teal-text grey lighten-3 s12 text-center highlight'>food and drink</button>
+        </div>
+        <div class="row">
+          <button class='col btn teal-text grey lighten-3 s12 text-center highlight'>religion</button>
+        </div>
+        <div class="row">
+          <button class='col btn teal-text grey lighten-3 s12 text-center highlight'>sports and recreation</button>
+        </div>
+        <div class="row">
+          <button class='col btn teal-text grey lighten-3 s12 text-center highlight'>politics</button>
+        </div>
+      </div>
+      <div id='content' class="grey lighten-3 col s9">
+        <div class="row">
+          <div class="input-field col s12">
+            <div name="text" id="editor" contenteditable></div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="submit-btn col offset-s5 s2 btn waves-effect waves-light teal darken-1">Submit
+             <i class="material-icons right">send</i>
+           </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

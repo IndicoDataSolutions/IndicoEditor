@@ -1,0 +1,52 @@
+html, body { 
+    height: 100%; 
+    margin: 0px; 
+    padding: 0px; 
+    overflow-y: hidden;
+}
+
+#sidebar {
+    height: 100%;
+}
+
+#content {
+    height: 100%;
+}
+
+/* label color */
+.input-field label {
+    color: #eee;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #eee;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 1px 0 0 #eee;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 1px 0 0 #eee;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 1px 0 0 #eee;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #eee;
+}
+  
+#editor {
+    font-size: 30px;
+    line-height: 30px;
+    height: 300px;
+    padding: 20px;
+    border: #009688 2px solid;
+    border-radius: 5px;
+    overflow-y: scroll;
+}

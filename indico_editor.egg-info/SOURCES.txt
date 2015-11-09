@@ -1,0 +1,9 @@
+setup.py
+indico_editor/__init__.py
+indico_editor/app.py
+indico_editor/categories.py
+indico_editor.egg-info/PKG-INFO
+indico_editor.egg-info/SOURCES.txt
+indico_editor.egg-info/dependency_links.txt
+indico_editor.egg-info/requires.txt
+indico_editor.egg-info/top_level.txt
